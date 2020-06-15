@@ -14,7 +14,6 @@ db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function () {
   console.log("MongoDB connected");
 });
-console.log(db.name);
 
 app.use("/graphql", graphqlHTTP({ graphiql: true, schema }));
 
